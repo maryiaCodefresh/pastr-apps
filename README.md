@@ -1,0 +1,2 @@
+# pastr-apps
+Manifests repo
