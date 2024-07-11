@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     path: kustomize/overlays/prod
-    repoURL: https://github.com/maryiaCodefresh/pastr-apps.git
+    repoURL: https://github.com/maryiaCodefresh/pastr.git
     targetRevision: HEAD
   destination:
     name: in-cluster
