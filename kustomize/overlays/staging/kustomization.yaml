@@ -1,0 +1,14 @@
+namePrefix: staging-
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../base
+labels:
+- includeSelectors: true
+  pairs:
+    variant: staging
+patches:
+- path: staging-patches.yaml
+images:
+- name: mashabrauer/pastr
+  newTag: ef002c2
